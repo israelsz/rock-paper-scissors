@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@800&display=swap" rel="stylesheet">
+    <script src="rock-paper-scissors.js" defer></script>
 </head>
+
 <body>
-    <script src="rock-paper-scissors.js"></script>
+    <div class="title">
+        <h1 class="text">Rock Paper Scissors</h1>
+    </div>
+
+    <div class="topMessages">
+        <h2 id="info" class="text">You are Cheems, start playing!</h2>
+    </div>
+
+    <div class="game-zone">
+        <div>
+            <h1 id="computerScore" class="text">Computer: 0</h1>
+            <img class="ratImage" src="images/ratGun.jpg" />
+        </div>
+
+        <div class="computer-buttons">
+            <div>
+                <h2 class="text">Computer Choice</h2>
+            </div>
+
+            <div class="innerComputerButtons">
+                <button id="computerRock" class="computerOption"> <img src="images/rock.png" /> </button>
+                <button id="computerPaper" class="computerOption"> <img src="images/paper.png" /> </button>
+                <button id="computerScissors" class="computerOption"> <img src="images/scissors.png" /> </button>
+            </div>
+        </div>
+
+        <div class="player-buttons">
+            <div>
+                <h2 class="text">Make your choice</h2>
+            </div>
+
+            <div class="innerButtons">
+                <button id="playerRock" class="option"> <img src="images/rock.png" /> </button>
+                <button id="playerPaper" class="option"> <img src="images/paper.png" /> </button>
+                <button id="playerScissors" class="option"> <img src="images/scissors.png" /> </button>
+            </div>
+        </div>
+
+        <div>
+            <h1 id="playerScore" class="text">You: 0</h1>
+            <img class="cheemsImage" src="images/cheems.jpg" />
+        </div>
+
+    </div>
+
+    <div class="endMessage">
+        <h1 id="finalText">Congratulations you won!</h1>
+        <button id="restartButton">Play again</button>
+    </div>
+
+    <div class="backgroundEndGame">
+
+    </div>
+
+    <audio id="bonkAudio" src="images/bonk.mp3"></audio>
 </body>
+
 </html>
